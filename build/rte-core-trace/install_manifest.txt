@@ -1,0 +1,7 @@
+/workspace/embedded/embedded_package_config_lab/stage-trace/lib/librte_core.a
+/workspace/embedded/embedded_package_config_lab/stage-trace/include/rte/counter.h
+/workspace/embedded/embedded_package_config_lab/stage-trace/lib/cmake/RteCore/RteCoreTargets.cmake
+/workspace/embedded/embedded_package_config_lab/stage-trace/lib/cmake/RteCore/RteCoreTargets-noconfig.cmake
+/workspace/embedded/embedded_package_config_lab/stage-trace/lib/cmake/RteCore/RteCoreConfig.cmake
+/workspace/embedded/embedded_package_config_lab/stage-trace/lib/cmake/RteCore/RteCoreConfigVersion.cmake
+/workspace/embedded/embedded_package_config_lab/stage-trace/lib/pkgconfig/rte-core.pc

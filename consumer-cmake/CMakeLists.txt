@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(RteConsumerCMake LANGUAGES C)
+find_package(RteCore 1.2 REQUIRED CONFIG)
+add_executable(rte_consumer src/main.c)
+target_link_libraries(rte_consumer PRIVATE RteCore::rte_core)

@@ -1,0 +1,4 @@
+# Enable the optional library feature for this recipe:
+PACKAGECONFIG:append:pn-rte-core = " trace"
+# Add the runtime package to an image when an application needs it:
+IMAGE_INSTALL:append = " rte-core"

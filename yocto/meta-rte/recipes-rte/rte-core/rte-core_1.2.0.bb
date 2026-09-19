@@ -1,0 +1,11 @@
+SUMMARY = "Small reusable RTE counter library"
+DESCRIPTION = "CMake package, pkg-config metadata, tests, and optional tracing"
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
+SRC_URI = "file://rte-core-1.2.0.tar.gz"
+S = "${WORKDIR}/rte-core-1.2.0"
+inherit cmake pkgconfig
+PACKAGECONFIG ??= ""
+PACKAGECONFIG[trace] = "-DRTE_ENABLE_TRACE=ON,-DRTE_ENABLE_TRACE=OFF,,"
+EXTRA_OECMAKE += "-DBUILD_TESTING=OFF"
+FILES:${PN}-dev += "${libdir}/cmake/RteCore ${libdir}/pkgconfig/rte-core.pc"

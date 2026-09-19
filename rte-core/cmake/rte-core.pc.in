@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: rte-core
+Description: Small reusable RTE-style counter library
+Version: @PROJECT_VERSION@
+Libs: -L${libdir} -lrte_core
+Cflags: -I${includedir}

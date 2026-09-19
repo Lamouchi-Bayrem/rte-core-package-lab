@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/rte_core_test.dir/link.d CMakeFiles/rte_core_test.dir/tests/test_counter.c.o -o rte_core_test  librte_core.a

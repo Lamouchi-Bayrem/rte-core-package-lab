@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/rte_consumer.dir/link.d CMakeFiles/rte_consumer.dir/src/main.c.o -o rte_consumer  /workspace/embedded/embedded_package_config_lab/stage/lib/librte_core.a

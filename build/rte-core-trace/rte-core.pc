@@ -1,0 +1,10 @@
+prefix=/workspace/embedded/embedded_package_config_lab/stage-trace
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: rte-core
+Description: Small reusable RTE-style counter library
+Version: 1.2.0
+Libs: -L${libdir} -lrte_core
+Cflags: -I${includedir}

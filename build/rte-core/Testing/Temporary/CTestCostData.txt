@@ -1,0 +1,2 @@
+rte_core.counter 1 0.00144386
+---

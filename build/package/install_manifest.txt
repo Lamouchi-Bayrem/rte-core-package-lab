@@ -1,0 +1,7 @@
+/workspace/embedded/embedded_package_config_lab/_CPack_Packages/Linux/TGZ/rte-core-1.2.0-Linux/lib/librte_core.a
+/workspace/embedded/embedded_package_config_lab/_CPack_Packages/Linux/TGZ/rte-core-1.2.0-Linux/include/rte/counter.h
+/workspace/embedded/embedded_package_config_lab/_CPack_Packages/Linux/TGZ/rte-core-1.2.0-Linux/lib/cmake/RteCore/RteCoreTargets.cmake
+/workspace/embedded/embedded_package_config_lab/_CPack_Packages/Linux/TGZ/rte-core-1.2.0-Linux/lib/cmake/RteCore/RteCoreTargets-release.cmake
+/workspace/embedded/embedded_package_config_lab/_CPack_Packages/Linux/TGZ/rte-core-1.2.0-Linux/lib/cmake/RteCore/RteCoreConfig.cmake
+/workspace/embedded/embedded_package_config_lab/_CPack_Packages/Linux/TGZ/rte-core-1.2.0-Linux/lib/cmake/RteCore/RteCoreConfigVersion.cmake
+/workspace/embedded/embedded_package_config_lab/_CPack_Packages/Linux/TGZ/rte-core-1.2.0-Linux/lib/pkgconfig/rte-core.pc

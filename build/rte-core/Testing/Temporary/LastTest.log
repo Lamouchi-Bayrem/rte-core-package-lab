@@ -1,0 +1,18 @@
+Start testing: Sep 19 21:16 CET
+----------------------------------------------------------
+1/1 Testing: rte_core.counter
+1/1 Test: rte_core.counter
+Command: "/workspace/embedded/embedded_package_config_lab/build/rte-core/rte_core_test"
+Directory: /workspace/embedded/embedded_package_config_lab/build/rte-core
+"rte_core.counter" start time: Sep 19 21:16 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"rte_core.counter" end time: Sep 19 21:16 CET
+"rte_core.counter" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 19 21:16 CET

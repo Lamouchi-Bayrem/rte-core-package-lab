@@ -1,0 +1,3 @@
+/workspace/embedded/embedded_package_config_lab/build/consumer-pkgconfig/CMakeFiles/rte_pc_consumer.dir
+/workspace/embedded/embedded_package_config_lab/build/consumer-pkgconfig/CMakeFiles/edit_cache.dir
+/workspace/embedded/embedded_package_config_lab/build/consumer-pkgconfig/CMakeFiles/rebuild_cache.dir

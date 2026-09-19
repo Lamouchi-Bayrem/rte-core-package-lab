@@ -1,0 +1,2 @@
+/usr/bin/ar qc librte_core.a CMakeFiles/rte_core.dir/src/counter.c.o
+/usr/bin/ranlib librte_core.a

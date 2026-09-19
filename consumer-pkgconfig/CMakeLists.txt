@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(RteConsumerPkgConfig LANGUAGES C)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(RTE_CORE REQUIRED IMPORTED_TARGET rte-core>=1.2)
+add_executable(rte_pc_consumer src/main.c)
+target_link_libraries(rte_pc_consumer PRIVATE PkgConfig::RTE_CORE)

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/workspace/embedded/embedded_package_config_lab/build/rte-core-trace/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
