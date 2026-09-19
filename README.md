@@ -1,5 +1,60 @@
 # Embedded Package Configuration Lab
+## Project Architecture
 
+```mermaid
+flowchart LR
+    Developer["Developer"]
+
+    subgraph Producer["RTE Core Library"]
+        Header["Public API<br/>counter.h"]
+        Source["Implementation<br/>counter.c"]
+        Test["Unit Test<br/>test_counter.c"]
+        Library["Static Library<br/>librte_core.a"]
+
+        Header --> Source
+        Source --> Library
+        Test --> Library
+    end
+
+    subgraph Package["Installed Development Package"]
+        Include["include/rte/counter.h"]
+        Lib["lib/librte_core.a"]
+        CMakeConfig["CMake Package Config<br/>RteCoreConfig.cmake"]
+        PkgConfig["pkg-config Metadata<br/>rte-core.pc"]
+    end
+
+    subgraph Consumers["Independent Consumers"]
+        CMakeConsumer["CMake Consumer<br/>find_package()"]
+        PcConsumer["pkg-config Consumer<br/>pkg_check_modules()"]
+    end
+
+    subgraph Tools["Build and Delivery Tools"]
+        CTest["CTest<br/>Unit Testing"]
+        CPack["CPack<br/>TGZ Package"]
+        CI["GitHub Actions<br/>Build and Test"]
+    end
+
+    Developer --> Producer
+    Header --> Library
+    Test --> CTest
+
+    Library --> Lib
+    Header --> Include
+    Library --> CMakeConfig
+    Library --> PkgConfig
+
+    CMakeConfig --> CMakeConsumer
+    Lib --> CMakeConsumer
+    Include --> CMakeConsumer
+
+    PkgConfig --> PcConsumer
+    Lib --> PcConsumer
+    Include --> PcConsumer
+
+    Package --> CPack
+    Producer --> CI
+    Consumers --> CI
+```
 ## Goal
 
 This lab shows how an embedded library is built once, installed as a development package, discovered by independent applications, turned into an archive, and described to Yocto/OpenEmbedded.
